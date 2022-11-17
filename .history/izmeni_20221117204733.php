@@ -70,7 +70,7 @@ if(isset($_POST['azuriraj'])){
                     </select>
 
                     <br>
-                    <button class="BtnForm" type="submit" name="azuriraj">Ažuriraj film</button>
+                    <button class="BtnForm" type="submit" name="azuriraj">Azuriraj film</button>
 
                 </form>
             </div>

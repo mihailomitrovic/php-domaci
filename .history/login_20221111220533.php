@@ -48,7 +48,7 @@ if(isset($_POST['korisnickoIme']) && isset($_POST['lozinka'])){
         <div class="container">
             <form method="post" action="" id="forma">
                     <label class="korisnickoIme">Korisničko ime</label>
-                    <input type="text" name="korisnickoIme" class="form-control" required>
+                    <input type="text" name="korisnickoIme" class="form-control"  required>
                     <br>
                     <label for="lozinka">Lozinka</label>
                     <input type="password" name="lozinka" class="form-control" required>

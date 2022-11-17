@@ -1,7 +1,9 @@
 <?php
 
 
-class Film {
+class Film
+{
+
    public $filmID;
    public $naziv;
    public $statusID;
@@ -53,5 +55,5 @@ class Film {
         $odgovor =  $konekcija->query($query);
         return $odgovor;
     }
-
+    
 }

@@ -1,7 +1,9 @@
 <?php
 
 
-class Film {
+class Film
+{
+
    public $filmID;
    public $naziv;
    public $statusID;
@@ -24,7 +26,7 @@ class Film {
         if($status != "0"){
             $query .= " WHERE f.statusID = " . $status;
         }
-        $query .= " ORDER BY f.ocena " . $sortiranje;
+        $query.= " ORDER BY f.ocena " . $sortiranje;
         $resultSet = $konekcija->query($query);
         $filmovi = [];
         while($film = $resultSet->fetch_object()){
@@ -53,5 +55,4 @@ class Film {
         $odgovor =  $konekcija->query($query);
         return $odgovor;
     }
-
 }

@@ -9,14 +9,14 @@ if (!isset($_SESSION['korisnik'])) {
     exit();
 }
 
-if (isset($_POST['obrisi'])) {
+if(isset($_POST['obrisi'])){
     $film = trim($_POST['film']);
 
     if(Film::obrisi($film, $konekcija)){
         echo '<script type="text/javascript">
                window.onload = function () { alert("Film je obrisan!"); } 
               </script>'; 
-    } else{
+    }else{
         echo '<script type="text/javascript">
                window.onload = function () { alert("Došlo je do greške!"); } 
               </script>'; 
@@ -90,6 +90,7 @@ if (isset($_POST['obrisi'])) {
         }
     popuniFilmove();
     </script>
+
 
 </body>
 

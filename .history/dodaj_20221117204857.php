@@ -8,17 +8,17 @@ if (!isset($_SESSION['korisnik'])) {
     exit();
 }
 
-if (isset($_POST['sacuvaj'])) {
+if(isset($_POST['sacuvaj'])){
     $naziv = trim($_POST['naziv']);
     $status = trim($_POST['status']);
     $ocena = trim($_POST['ocena']);
     $zanr = trim($_POST['zanr']);
 
-    if (Film::dodaj($naziv, $status, $ocena, $zanr, $konekcija)) {
+    if(Film::dodaj($naziv, $status, $ocena, $zanr, $konekcija)){
         echo '<script type="text/javascript">
                window.onload = function () { alert("Film je evidentiran!"); } 
               </script>'; 
-    } else{
+    }else{
         echo '<script type="text/javascript">
                window.onload = function () { alert("Došlo je do greške!"); } 
               </script>'; 

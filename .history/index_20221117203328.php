@@ -8,7 +8,7 @@ if (!isset($_SESSION['korisnik'])) {
     exit();
 }
 
-if (isset($_COOKIE["korisnik"])) {
+if (isset($_COOKIE["korisnik"])){
     $username=$_COOKIE["korisnik"];
 }
 
@@ -72,6 +72,7 @@ if (isset($_COOKIE["korisnik"])) {
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     
     <script>
+
         function pocetnaPretraga() {
             let status = "0";
             let sortiranje = "asc";

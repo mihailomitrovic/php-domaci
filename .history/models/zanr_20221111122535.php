@@ -1,8 +1,10 @@
 <?php
 
 class Zanr {
+
     public $zanrID;
     public $zanr;
+
 
     public function __construct($zanrID=null,$zanr=null)
     {
@@ -20,5 +22,6 @@ class Zanr {
         }
         return $zanrovi;
     }
+
 }
 

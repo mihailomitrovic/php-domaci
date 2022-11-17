@@ -1,6 +1,7 @@
 <?php
 
-class Korisnik {
+class Korisnik{
+    
     public $korisnikID;
     public $korisnickoIme;
     public $lozinka;

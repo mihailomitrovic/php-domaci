@@ -8,7 +8,7 @@ if (!isset($_SESSION['korisnik'])) {
     exit();
 }
 
-if (isset($_COOKIE["korisnik"])) {
+if (isset($_COOKIE["korisnik"])){
     $username=$_COOKIE["korisnik"];
 }
 

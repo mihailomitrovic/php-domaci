@@ -10,7 +10,7 @@ if(isset($_POST['azuriraj'])){
         echo '<script type="text/javascript">
         window.onload = function () { alert("Film je uspešno ažuriran!"); } 
         </script>'; 
-    } els {
+    }else{
         echo '<script type="text/javascript">
         window.onload = function () { alert("Došlo je do greške!"); } 
         </script>'; 
@@ -70,7 +70,7 @@ if(isset($_POST['azuriraj'])){
                     </select>
 
                     <br>
-                    <button class="BtnForm" type="submit" name="azuriraj">Ažuriraj film</button>
+                    <button class="BtnForm" type="submit" name="azuriraj">Azuriraj film</button>
 
                 </form>
             </div>
