@@ -9,6 +9,6 @@ $konekcija->set_charset('utf8');
 
 
 if ($konekcija->connect_errno){
-    exit("Neuspešna konekcija");
+    exit("Neuspesna konekcija");
 }
 ?>
